@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Forms */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    /* ✅ Safari compatibility */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff4081;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 64, 129, 0.3);
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff4081, #ff79a1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #d83570, #ff4081);
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+
+.viewthetable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: linear-gradient(45deg, #ff4081, #ff79a1);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: rgba(255, 64, 129, 0.1);
+}
+
+/* Message Styling */
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Centered Content */
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
