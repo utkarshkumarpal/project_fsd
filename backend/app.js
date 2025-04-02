@@ -85,7 +85,7 @@ app.delete('/users/:id', async (req, res) => {
         return res.status(404).json({ message: 'User not found' });
     }
 
-    const deletedUser = users[userIndex]; 
+    const deletedUser = users[userIndex];
     users.splice(userIndex, 1);
     await writedata();
     res.status(200).json({ message: 'User deleted successfully', data: deletedUser });
